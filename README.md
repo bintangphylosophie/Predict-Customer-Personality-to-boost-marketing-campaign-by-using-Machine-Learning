@@ -311,16 +311,16 @@ To visualize the clustered data, I applied Principal Component Analysis (PCA) wi
 <div align="center">
   <table>
     <tr>
-      <td><img src="https://github.com/user-attachments/assets/3fd3f0b5-bf86-4237-bcdb-8e81233dacae" width="300"></td>
+      <td><img src="https://github.com/user-attachments/assets/3fd3f0b5-bf86-4237-bcdb-8e81233dacae" width="400"></td>
     </tr>
     <tr>
-      <td><img src="https://github.com/user-attachments/assets/26ee320d-3ead-4d3c-90f3-b055bbf0dd5f" width="300"></td>
+      <td><img src="https://github.com/user-attachments/assets/26ee320d-3ead-4d3c-90f3-b055bbf0dd5f" width="400"></td>
     </tr>
     <tr>
-      <td><img src="https://github.com/user-attachments/assets/c5249833-0cb8-4962-b2dc-f77420f9c503" width="300"></td>
+      <td><img src="https://github.com/user-attachments/assets/c5249833-0cb8-4962-b2dc-f77420f9c503" width="400"></td>
     </tr>
     <tr>
-      <td><img src="https://github.com/user-attachments/assets/7122bdcf-a4e1-4973-8b86-bec6f8ecc47e" width="300"></td>
+      <td><img src="https://github.com/user-attachments/assets/7122bdcf-a4e1-4973-8b86-bec6f8ecc47e" width="400"></td>
     </tr>
   </table>
 </div>
@@ -330,29 +330,9 @@ To visualize the clustered data, I applied Principal Component Analysis (PCA) wi
 ## ✅ Business Recommendation
 To improve retention, the company deploys a machine learning model to identify key factors leading to resignations. with AI-driven insights, the company designs targeted retention strategies:
 
-### The model strongly relies on "AlasanResign" (Resignation Reason), meaning that resignation trends must be analyzed deeply to take proactive action. Since working hour is the dominant factor, some action recommend:
-- **Analyze Overtime Trends:** Check which departments consistently work overtime and why.
-- **Survey Employees:** Get feedback on workload, stress levels, and preferred work hours.
-- **Compare Productivity Metrics:** Measure performance vs. hours worked to find the optimal balance.
-- **Implement Flexible Working Hours:** Allow employees to choose a start time (e.g., 7 AM - 3 PM, 9 AM - 5 PM, 11 AM - 7 PM)
-- **Implement Hybrid & Remote Work Options:** Allow employees to work 2-3 days from home per week.
-- **Reduce Unnecessary Meetings & Improve Time Efficiency:** Limit Meetings to 30-45 Minutes, Set "No-Meeting Days“,Block 1-2 days per week for deep work without interruptions.
-
-### The model detects that employees from Jakarta Selatan and mid-employees have a higher risk of resigning. 
-- **Personalized Exit Interviews:** Focus on  mid-employee and Jakarta Selatan employees to understand their concerns, "Stay Interviews": Monthly check-ins with at-risk employees
-- **Internal Mentorship Programs:** Pair mid-level employees with senior mentors.
-
-#### Machine learning provided valuable insights, but human intervention was key in designing effective retention strategies. XYZ Corp launches AI-powered retention programs for 6 months and tracks the impact.
-
-## 📝 Business Impact Simulation  
-Company Name Profile: **XYZ Corp**
-A tech company, XYZ Corp, has been struggling with high employee turnover, affecting productivity, morale, and recruitment costs. To improve retention, the company deploys a machine learning model to identify key factors leading to resignations. with AI-driven insights, the company designs targeted retention strategies.
-
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/78c8ecef-dbf8-444e-9c8c-4906da6ebf09" width="600">
-</div>
-
-
+- Double down on High-Valued Customers: Maximize revenue through loyalty and expansion.
+- Revive Medium-Valued Customers: They’ve shown spending potential, just need the right trigger.
+- Test and Learn with Low/Very Low Segments: Use low-risk, low-cost experiments to re-engage—or accept potential churn and focus resources elsewhere.
 ## Acknowledgements🌟
 
 I would like to express our deepest appreciation to Rakamin Academy for providing the opportunity to work on this exciting project. The experience and knowledge we gained throughout this journey have been invaluable.
