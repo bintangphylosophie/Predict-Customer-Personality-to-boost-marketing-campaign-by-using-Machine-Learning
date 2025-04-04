@@ -293,7 +293,7 @@ jupyter notebook Predict Customer Personality to Boost Marketing Campaign by Usi
 ## 1. **Number of CLuster**: 🏗️<br>
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/3c678e3d-b699-4f2e-bb57-9d35255b607e" width="200">
+  <img src="https://github.com/user-attachments/assets/3c678e3d-b699-4f2e-bb57-9d35255b607e" width="300">
 </div>
 
 I experimented with both inertia and the elbow method to determine the optimal number of clusters for this machine learning task. As shown in the image below, considering both the silhouette score and the inertia score, we can observe that the elbow point—along with the peak silhouette score—occurs at 4 clusters.
@@ -304,24 +304,27 @@ Next, I will apply the K-Means algorithm for clustering, using 4 as the optimal 
 
 To visualize the clustered data, I applied Principal Component Analysis (PCA) with n_components = 2, reducing the data to two dimensions.
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/80450b2f-3043-4d59-9f2d-d3fa40658fce" width="200">
+  <img src="https://github.com/user-attachments/assets/80450b2f-3043-4d59-9f2d-d3fa40658fce" width="300">
 </div>
 
 ## 3. **Cluster Visualization**: 🥇<br>
-<table>
-  <tr>
-    <td><img src="https://github.com/user-attachments/assets/3fd3f0b5-bf86-4237-bcdb-8e81233dacae" width="300"></td>
-  </tr>
-  <tr>
-    <td><img src="https://github.com/user-attachments/assets/26ee320d-3ead-4d3c-90f3-b055bbf0dd5f" width="300"></td>
-  </tr>
-  <tr>
-    <td><img src="https://github.com/user-attachments/assets/c5249833-0cb8-4962-b2dc-f77420f9c503" width="300"></td>
-  </tr>
-  <tr>
-    <td><img src="https://github.com/user-attachments/assets/7122bdcf-a4e1-4973-8b86-bec6f8ecc47e" width="300"></td>
-  </tr>
-</table>
+<div align="center">
+  <table>
+    <tr>
+      <td><img src="https://github.com/user-attachments/assets/3fd3f0b5-bf86-4237-bcdb-8e81233dacae" width="300"></td>
+    </tr>
+    <tr>
+      <td><img src="https://github.com/user-attachments/assets/26ee320d-3ead-4d3c-90f3-b055bbf0dd5f" width="300"></td>
+    </tr>
+    <tr>
+      <td><img src="https://github.com/user-attachments/assets/c5249833-0cb8-4962-b2dc-f77420f9c503" width="300"></td>
+    </tr>
+    <tr>
+      <td><img src="https://github.com/user-attachments/assets/7122bdcf-a4e1-4973-8b86-bec6f8ecc47e" width="300"></td>
+    </tr>
+  </table>
+</div>
+
 
 
 ## ✅ Business Recommendation
