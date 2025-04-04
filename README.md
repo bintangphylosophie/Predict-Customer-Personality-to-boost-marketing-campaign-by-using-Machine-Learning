@@ -1,4 +1,4 @@
-# Predict Customer Personality to boost marketing campaign by using Machine Learning
+# Predict Customer Personality to Boost Marketing Campaign by Using Machine Learning
 
 <br>
 <p align="center">
@@ -155,24 +155,24 @@ This is the second stage of  focusing on feature engineering of the dataset. The
 <br>
 
 **Key steps in this stage include:**
-## 1. Column: `Dt_Customer1`
+### 1. Column: `Dt_Customer1`
 - Years_Joined
 - Days_Joined
-## 2. Column: `Year_Birth`
+### 2. Column: `Year_Birth`
 - Age
 - Age Group
-## 3. Column: `Marital_Status`
+### 3. Column: `Marital_Status`
 - Marital_Status_Simplified
-## 4. Column: `Income`
+### 4. Column: `Income`
 - Income_Group
-## 5. Column: `Total_Amount`
-## 6. Column: `Recency`
+### 5. Column: `Total_Amount`
+### 6. Column: `Recency`
 - Recency_Group
-## 7. Column: `Total_Purchase`
-## 8. Column: `Preferred_Channel`
-## 9. Column: `Total_Campaigns_Accepted`
-## 10. Column: `Conversion_Rate`
-## 11. Column: `Total_Children`
+### 7. Column: `Total_Purchase`
+### 8. Column: `Preferred_Channel`
+### 9. Column: `Total_Campaigns_Accepted`
+### 10. Column: `Conversion_Rate`
+### 11. Column: `Total_Children`
 <br>
 <br>
 
@@ -219,7 +219,7 @@ This is the next phase of the project, focusing on gaining insights. Here are so
       <td><img src="https://github.com/user-attachments/assets/0f208e7d-847a-4415-9359-eaa29e351761" width="300"></td>
     </tr>
     <tr>
-      <td><img src="https://github.com/user-attachments/assets/11216b0d-660e-466a-a7c0-8f9d947f1898" width="300"></td>
+      <td colspan="2" align="center"><img src="https://github.com/user-attachments/assets/11216b0d-660e-466a-a7c0-8f9d947f1898" width="300"></td>
     </tr>
   </table>
 </div>
@@ -232,20 +232,20 @@ For further and deeper analysis and explanation, kindly check:
 # ⚙️ Stage 4: Data Preprocessing
 This stage is focusing on data preprocessing of the dataset transform the data to make it suitable for modeling
 ## 1. **Feature Encoding** 🏷️<br>
-I encode all of our categorical features (strings) using the label encoding method. All features have been encoded at the feature extraction stage, given that our features are ordinal data and the majority of machine learning algorithms perform better with numerical data.
+I will manually encode the values for the columns `Education`, `Marital_Simplified`, and `Age_Group` using .map to ensure they are ordered correctly.
 
 ## 2. **Data Scaling** 🏷️<br>
-Data scaling is the process of transforming feature values within a dataset to ensure they have a uniform range. I performed using MinMaxScaler to improve machine learning algorithm performance that will be perform in next stage.
+Data scaling is the process of transforming feature values within a dataset to ensure they have a uniform range. I performed the numerical features using MinMaxScaler to improve machine learning algorithm performance that will be perform in next stage.
 
 ## 3. **Feature Selection** 🎯<br>
-Since I am working with categorical features and a classification problem, SelectKBest with chi2 is a great choice because it is: fast, helps remove irrelevant features, works well with encoded categorical data. This method is commonly used to reduce dimensionality by keeping only the most relevant features for predictive modeling. I only keep top 15 features.
+For segmenting customer, there is a method called RFM Analysis, 
+for you want to know deeply about RFM can read this reference : https://www.barilliance.com/rfm-analysis/#:~:text=RFM%20analysis%20is%20a%20data,much%20they've%20spent%20overall .
+- Recency      : Date of Last of Purchases `Recency`
+- Frequency    : Total Number of Orders    `Total_Purchases`
+- Monetization : Total order value         `Total_Amount`
+- Loyalty      : Total campaign accepted   `Total_Campaigns_Accepted`
 
-## 4. **Data Splitting**<br>
-Data splitting is the process of dividing a dataset into different subsets to train, validate, and test a machine learning model. 
-The main goal of this stage is to build and evaluate models that can predict the target variable based on the preprocessed data. The data splitted into 20% train and 80% test.
-
-
-Prior to this, the dataset was split into training and testing sets. After completing all preprocessing steps, the data is clean and ready for machine learning to predict the target.🤖
+After completing all preprocessing steps, the data is now clean and ready for machine learning to perform customer segmentation through clustering. 🤖
 
 <br>
 <br>
@@ -256,7 +256,7 @@ Prior to this, the dataset was split into training and testing sets. After compl
 <p align="center">
 <img src="https://media0.giphy.com/media/Y4PkFXkfTeEKqGBBsC/giphy.gif?cid=ecf05e47numetagrmbl2rxf6x0lpcjgq1s340dfdh1oi0x9w&ep=v1_gifs_related&rid=giphy.gif&ct=g" width="420">
 </p>
-The main goal of this stage is to build and evaluate models that can predict the target variable based on the preprocessed data. 🎯
+At this stage, the primary objective is to develop and assess models for clustering customer segments using the preprocessed data.🎯
 
 ## 📚 Installation
 
@@ -284,73 +284,44 @@ pip install jupyter
 
 Once you have Python and the necessary libraries, you can run the project using Jupyter Notebook:
 ```bash
-jupyter notebook Improving Employee Retention by Predicting Employee Attrition Using Machine Learning.ipynb
+jupyter notebook Predict Customer Personality to Boost Marketing Campaign by Using Machine Learning.ipynb
 ```
 
 
 **Key steps in this last stage include:**
 
-## 1. **Models**: 🏗️<br>
+## 1. **Number of CLuster**: 🏗️<br>
 
-I experimented with other algorithms. A total of 5 algorithms were tested during the experiment, including:
-- **Support Vector Machine**
-- **Gradient Boosting**
-- **Decision Tree**
-- **Random Forest**
-- **Logistic Regression**
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/3c678e3d-b699-4f2e-bb57-9d35255b607e" width="200">
+</div>
 
+I experimented with both inertia and the elbow method to determine the optimal number of clusters for this machine learning task. As shown in the image below, considering both the silhouette score and the inertia score, we can observe that the elbow point—along with the peak silhouette score—occurs at 4 clusters.
+Next, I will apply the K-Means algorithm for clustering, using 4 as the optimal number of clusters based on our previous analysis.
 <br> 
 
-**Tuning:** Hyperparameter tuning was performed only on the 1 best algorithms (those with the highest ROC AUC score).
+## 2. **Principal Component Analysis (PCA)**: 🏋️‍♀️🎯<br>
 
-## 2. **Model Training and Evaluation**: 🏋️‍♀️🎯<br>
-
-The following are the prediction results with the highest Accurcy and ROC-AUC:
-
-### Model Results
-| Model Name | Accuracy | ROC AUC | 
-|------------|--------------|-------------|
-| Support Vector Machine | 0.67 | 0.50 | 
-| Gradient Boosting | 0.94 | 0.94 | 
-| Decision Tree | 0.93 | 0.93 | 
-| Random Forest | 0.89 | 0.85 | 
-| Logistic Regression | 0.70 | 0.57 | 
-
-
-We discovered that the Gradient Boosting Model with the highest Accuracy (0.94) and ROC AUC (0.94), stability compared to other models. 
-
-## 3. **Model Selection**: 🥇<br>
-
-### Model Results
-| Model Name | Accuracy | ROC AUC | 
-|------------|--------------|-------------|
-| Gradient Boosting | **0.94** | **0.94** |
-
-with confussion matrich and ROC AUC score like this:
-
+To visualize the clustered data, I applied Principal Component Analysis (PCA) with n_components = 2, reducing the data to two dimensions.
 <div align="center">
-  <table>
-    <tr>
-      <td><img src="https://github.com/user-attachments/assets/259784b2-2b39-4912-b555-26b4d56dfdeb" width="400"></td>
-      <td><img src="https://github.com/user-attachments/assets/ffb76db3-751f-4ef9-b82a-56c05b3ec943" width="400"></td>
-    </tr>
-  </table>
+  <img src="https://github.com/user-attachments/assets/80450b2f-3043-4d59-9f2d-d3fa40658fce" width="200">
 </div>
 
-## 🔑 Feature Importance 
-Based on the Gradient Boosting model Feature Importance:
-
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/200d233e-1cdc-403e-bb6a-8887b523f375" width="400">
-</div>
-
-<br>
-
-The top importance feature with score > 0.01 are :
-- `AlasanResign`
-- `AsalDaerah_JakartaSelatan`
-- `UsiaKaryawan`
-- `HiringPlatform_Diversity_Jobfair`
+## 3. **Cluster Visualization**: 🥇<br>
+<table>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/3fd3f0b5-bf86-4237-bcdb-8e81233dacae" width="300"></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/26ee320d-3ead-4d3c-90f3-b055bbf0dd5f" width="300"></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/c5249833-0cb8-4962-b2dc-f77420f9c503" width="300"></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/7122bdcf-a4e1-4973-8b86-bec6f8ecc47e" width="300"></td>
+  </tr>
+</table>
 
 
 ## ✅ Business Recommendation
