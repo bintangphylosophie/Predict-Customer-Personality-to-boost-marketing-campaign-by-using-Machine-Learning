@@ -32,7 +32,7 @@ pip install jupyter
 
 Once you have Python and the necessary libraries, you can run the project using Jupyter Notebook:
 ```bash
-jupyter notebook Improving Employee Retention by Predicting Employee Attrition Using Machine Learning.ipynb
+jupyter notebook Predict Customer Personality to Boost Marketing Campaign by Using Machine Learning.ipynb
 ```
 ## Project Overview
 A company can develop rapidly when it knows its customers' personality behavior, so that it can provide better services and benefits to customers who have the potential to become loyal customers. By processing historical marketing campaign data to improve performance and target the right customers so they can make transactions on the company's platform, from this data insight our focus is to create a cluster prediction model to make it easier for companies to make decisions.
@@ -225,9 +225,7 @@ This is the next phase of the project, focusing on gaining insights. Here are so
 </div>
 For further and deeper analysis and explanation, kindly check:
 
-[Improving Employee Retention (PDF)](https://github.com/bintangphylosophie/Improving-Employee-Retention-by-Predicting-Employee-Attrition-Using-Machine-Learning/blob/main/Improving%20Employee%20Retention%20by%20Predicting%20Employee%20Attrition%20Using%20Machine%20Learning.pdf)
-
-
+[Predict Customer Personality to Boost Marketing Campaign Using Machine Learning (PDF)](https://github.com/bintangphylosophie/Predict-Customer-Personality-to-boost-marketing-campaign-by-using-Machine-Learning/blob/main/Predict%20Customer%20Personality%20To%20Boost%20Marketing%20Campaign%20By%20Using%20Machine%20Learning.pdf)
 
 # ⚙️ Stage 4: Data Preprocessing
 This stage is focusing on data preprocessing of the dataset transform the data to make it suitable for modeling
@@ -275,7 +273,7 @@ If you don't have Python installed yet, it's recommended that you install [the A
 To install the Python libraries, you can use pip:
 
 ```bash
-pip install numpy pandas matplotlib seaborn scipy sklearn imbalanced-learn xgboost shap
+pip install numpy pandas matplotlib seaborn scipy sklearn imbalanced-learn shap
 ```
 To run the Jupyter notebook, you also need to have Jupyter installed. If you installed Python using Anaconda, you already have Jupyter installed. If not, you can install it using pip:
 ```bash
@@ -366,7 +364,7 @@ To visualize the clustered data, I applied Principal Component Analysis (PCA) wi
 
 ## Business Simulation
 <div align="center">
-  <img src="https://github.com/user-attachments/assetse9cc200b-1cd9-4d7d-ba23-f305aeb4cd0d" width="300">
+  <img src="https://github.com/user-attachments/assets/e9cc200b-1cd9-4d7d-ba23-f305aeb4cd0d" width="300">
 </div>
 ## Acknowledgements🌟
 
