@@ -288,7 +288,7 @@ jupyter notebook Predict Customer Personality to Boost Marketing Campaign by Usi
 
 **Key steps in this last stage include:**
 
-## 1. **Number of CLuster**: 🏗️<br>
+## 1. **Number of Cluster**: 🏗️<br>
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/3c678e3d-b699-4f2e-bb57-9d35255b607e" width="300">
@@ -364,7 +364,7 @@ To visualize the clustered data, I applied Principal Component Analysis (PCA) wi
 
 ## Business Simulation
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/e9cc200b-1cd9-4d7d-ba23-f305aeb4cd0d" width="300">
+  <img src="https://github.com/user-attachments/assets/e9cc200b-1cd9-4d7d-ba23-f305aeb4cd0d" width="400">
 </div>
 ## Acknowledgements🌟
 
