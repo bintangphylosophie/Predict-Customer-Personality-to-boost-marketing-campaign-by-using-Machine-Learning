@@ -325,14 +325,49 @@ To visualize the clustered data, I applied Principal Component Analysis (PCA) wi
   </table>
 </div>
 
+## Customer Personality Analysis for Each Cluster
+**High-Valued Customer**
+- Customers in this group have a low average recency (22 days), a high average total purchase (22 times), and a high average total amount (1.20 million Rupiah). 20% of our customers fall into this category. 
+
+**Medium-Valued Customer**
+- Customers on this group have high average recency (72 days), high average total purchase (22 times) and high average total amount (1,18 Million Rupiah).There 24.09% of our customer fall into this category. There are 309 customer never accept our campaign, 107 accepted it once, 36 accepted it twice, 21 accepted it three times and 4 accepted it four times. 
+
+**Low-Valued Customer**
+- Customers on this group have low average recency (24 days), low average total purchase (10 times) and low average total amount (161K Rupiah).There 29.03% of our customer fall into this category. There are 547 customer never accept our campaign, 50 accepted it once and 2 accepted it twice.
+
+**Very Low-Valued Customer**
+- Customers on this group have high average recency (74 days), low average total purchase (10 times) and low average total amount (153K Rupiah).There 28,44% of our customer fall into this category. There are 517 customer never accept our campaign and 44 accepted it once.
 
 
 ## ✅ Business Recommendation
-To improve retention, the company deploys a machine learning model to identify key factors leading to resignations. with AI-driven insights, the company designs targeted retention strategies:
+**High-Valued Customer**
+- Loyalty Programs: Offer exclusive rewards or VIP membership to retain them and increase lifetime value.
+- Upsell & Cross-sell: Promote premium or complementary products to increase basket size.
+- Personalized Communication: Keep them engaged with early access to new launches and personalized offers.
+- Referral Incentives: Encourage referrals through incentives since they're loyal and active.
 
-- Double down on High-Valued Customers: Maximize revenue through loyalty and expansion.
-- Revive Medium-Valued Customers: They’ve shown spending potential, just need the right trigger.
-- Test and Learn with Low/Very Low Segments: Use low-risk, low-cost experiments to re-engage—or accept potential churn and focus resources elsewhere.
+**Medium-Valued Customer**
+- Re-engagement Campaigns: Use targeted emails or limited-time offers to bring them back.
+- A/B Test Campaign Formats: Since campaign response is low, experiment with new messaging, timing, or incentives.
+- Segment by Past Purchases: Tailor recommendations based on what they used to buy.
+- Urgency & Scarcity: Promote FOMO-driven campaigns ("Only 2 days left!") to rekindle interest.
+
+**Low-Valued Customer**
+- Incentivize First Bigger Purchase: Offer discounts or free shipping on higher-value items.
+- Educate & Nurture:  Use content (e.g., how-tos, reviews) to build product value and trust.
+- Bundle Offers: Create appealing product bundles to boost average order value.
+- Analyze Barriers: Investigate what’s preventing higher spending—price, product relevance, etc.
+
+**Very Low-Valued Customer**
+- Reactivation Campaigns: Offer a "We Miss You" deal with strong incentives (e.g., 50% off, free gift).
+- Exit Surveys: If they churn, ask why — to gather insights for improving products or communication.
+- Exclude from Costly Campaigns: Avoid targeting this segment with expensive marketing unless re-engagement ROI is proven.
+- Retarget via Low-Cost Channels: Use social media or SMS instead of email blasts or paid ads.
+
+## Business Simulation
+<div align="center">
+  <img src="https://github.com/user-attachments/assetse9cc200b-1cd9-4d7d-ba23-f305aeb4cd0d" width="300">
+</div>
 ## Acknowledgements🌟
 
 I would like to express our deepest appreciation to Rakamin Academy for providing the opportunity to work on this exciting project. The experience and knowledge we gained throughout this journey have been invaluable.
